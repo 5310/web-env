@@ -1,0 +1,51 @@
+{
+  "name": "web-env",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "browserslist": "^2.3.3",
+    "eslint": "^4.4.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-html": "^3.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jsonfile": "^3.0.1",
+    "jspm": "^0.17.0-beta.42",
+    "metalsmith": "^2.3.0",
+    "metalsmith-babel": "^4.1.0",
+    "metalsmith-rename": "^1.0.0",
+    "metalsmith-with-postcss": "git://github.com/5310/metalsmith-with-postcss.git",
+    "postcss": "^6.0.9",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-font-magician": "^2.0.0",
+    "postcss-mixins": "^6.0.1",
+    "postcss-nested": "^2.1.2",
+    "postcss-nested-props": "^1.1.7",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0",
+    "sugarss": "^1.0.0"
+  },
+  "jspm": {
+    "name": "web-env",
+    "main": "index.js",
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
+    }
+  }
+}

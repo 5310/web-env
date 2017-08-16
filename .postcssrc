@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "postcss-nested": {},
+    "postcss-nested-props": {},
+    "postcss-mixins": {},
+    "postcss-font-magician": {},
+    "postcss-cssnext": {}
+  },
+  "map": false
+}
