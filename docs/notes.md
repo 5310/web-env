@@ -83,5 +83,11 @@
   - https://github.com/segmentio/metalsmith-collections
   - http://www.petermorlion.com/writing-your-first-metalsmith-plugin/
   - http://www.metalsmith.io/#matching
-  - Consider adding a watch mode.
+
+## TODO
+
+- Consider adding a watch mode.
+- Add `serve` as a dev-dep.
+- Prototype a Cycle.js webcomponent.
+
 
