@@ -83,4 +83,5 @@
   - https://github.com/segmentio/metalsmith-collections
   - http://www.petermorlion.com/writing-your-first-metalsmith-plugin/
   - http://www.metalsmith.io/#matching
+  - Consider adding a watch mode.
 
