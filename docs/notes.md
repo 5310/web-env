@@ -32,10 +32,6 @@
   - metalsmith-babel
   - metalsmith-postcss
   - metalsmith-pug
-  - metalsmith-layouts?
-    - Only if you can add support for AsciiDoctor (addons and all) into Consolidate.js
-  - metalsmith-asciidoc?
-    - Standalone AsciiDoctor support only if Consolidate.js doesn't work out.
 - jspm
 
 ## Config Files
@@ -89,5 +85,8 @@
 - Consider adding a watch mode.
 - Add `serve` as a dev-dep.
 - Prototype a Cycle.js webcomponent.
+- Asciidoctor in Metalsmith
+  - See if you can add support for AsciiDoctor (addons and all) into Consolidate.js and therefore `metalsmith-layouts`
+  - Implement a standalone AsciiDoctor plugin if Consolidate.js doesn't work out.
 
 
