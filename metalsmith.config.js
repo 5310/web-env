@@ -27,14 +27,14 @@ new Metalsmith(__dirname)
   .use(filter(['**/*.sss', '**/*.css']))
   .use(require('metalsmith-with-postcss')(
     Object.assign({}, json('.postcssrc'), {
-      pattern: ["**/*.sss"],
+      pattern: ['**/*.sss'],
       parser: require('sugarss')
     })
   ))
   .use(require('metalsmith-rename')([[/\.sss$/, '.css']]))
   .use(require('metalsmith-with-postcss')(
     Object.assign({}, json('.postcssrc'), {
-      pattern: ["**/*.css"]
+      pattern: ['**/*.css']
     })
   ))
   .build(debug)
