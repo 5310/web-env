@@ -14,7 +14,6 @@
   "devDependencies": {
     "babel-core": "6.x",
     "babel-eslint": "7.x",
-    "babel-plugin-inline-import": "2.x",
     "babel-preset-env": "1.x",
     "babel-preset-stage-2": "6.x",
     "browserslist": "2.x",
