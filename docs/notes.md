@@ -3,6 +3,7 @@
 - (atom)
   - atom-language-postcss
   - emmet
+- jsonfile
 - browserslist
 - eslint
   - babel-eslint
@@ -26,9 +27,11 @@
   - postcss-font-magician
   - postcss-cssnext
 - metalsmith
+  - metalsmith-filter
   - metalsmith-babel
   - metalsmith-postcss
   - metalsmith-rename
+  - metalsmith-pug
   - metalsmith-layouts?
   - metalsmith-asciidoc?
 - jspm

@@ -1,0 +1,9 @@
+extends layouts/index.pug
+
+block links
+  link(rel='stylesheet', href='./index.css')
+
+block content
+  h1 Hullo world!
+  script.
+    SystemJS.import('./index.js')
