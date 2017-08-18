@@ -1,8 +1,8 @@
 ## Packages
 
 - (atom)
-  - atom-language-postcss
-  - emmet
+  - apm:atom-language-postcss
+  - apm:linter-stylelint
 - jsonfile
 - browserslist
 - eslint
@@ -28,12 +28,14 @@
   - postcss-cssnext
 - metalsmith
   - metalsmith-filter
+  - metalsmith-rename
   - metalsmith-babel
   - metalsmith-postcss
-  - metalsmith-rename
   - metalsmith-pug
   - metalsmith-layouts?
+    - Only if you can add support for AsciiDoctor (addons and all) into Consolidate.js
   - metalsmith-asciidoc?
+    - Standalone AsciiDoctor support only if Consolidate.js doesn't work out.
 - jspm
 
 ## Config Files
