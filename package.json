@@ -9,7 +9,7 @@
   "scripts": {
     "build": "node metalsmith.config.js",
     "dev": "npm run serve & npm run watch",
-    "serve": "./node_modules/.bin/http-server --S -C .cert.localhost.pem -K .key.localhost.pem",
+    "serve": "./node_modules/.bin/http-server -p 8888 --S -C .cert.localhost.pem -K .key.localhost.pem",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "./node_modules/.bin/watch 'npm run build' ./src -du --wait=5"
   },
