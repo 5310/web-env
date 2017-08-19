@@ -27,6 +27,10 @@ SystemJS.config({
     "npm:@*/*.json",
     "npm:*.json"
   ],
-  map: {},
+  map: {
+    "preact": "npm:preact@8.2.1",
+    "process": "npm:jspm-nodelibs-process@0.2.1",
+    "skatejs": "npm:skatejs@5.0.0-alpha.16"
+  },
   packages: {}
 });

@@ -52,8 +52,15 @@
   "jspm": {
     "name": "web-env",
     "main": "index.js",
+    "dependencies": {
+      "skatejs": "npm:skatejs@^5.0.0-alpha.16"
+    },
     "devDependencies": {
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
+      "plugin-babel": "npm:systemjs-plugin-babel@0.x"
+    },
+    "peerDependencies": {
+      "preact": "npm:preact",
+      "process": "npm:jspm-nodelibs-process@0.x"
     }
   }
 }
