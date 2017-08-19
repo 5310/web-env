@@ -9,6 +9,7 @@
   "scripts": {
     "build": "node metalsmith.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "./node_modules/.bin/watch 'npm run build' ./src -du --wait=5"
   },
   "author": "",
   "license": "MIT",
@@ -29,6 +30,7 @@
     "jspm": "0.17.0-beta.42",
     "metalsmith": "2.x",
     "metalsmith-babel": "4.x",
+    "metalsmith-changed": "3.x",
     "metalsmith-filter": "1.x",
     "metalsmith-pug": "2.x",
     "metalsmith-rename": "1.x",
@@ -42,6 +44,7 @@
     "stylelint": "8.x",
     "stylelint-config-standard": "17.x",
     "sugarss": "1.x"
+    "watch": "1.x"
   },
   "jspm": {
     "name": "web-env",

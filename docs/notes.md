@@ -32,7 +32,9 @@
   - metalsmith-babel
   - metalsmith-postcss
   - metalsmith-pug
+  - metalsmith-changed
 - jspm
+- watch
 
 ## Config Files
 
@@ -82,7 +84,6 @@
 
 ## TODO
 
-- Consider adding a watch mode.
 - Add `serve` as a dev-dep.
 - Prototype a Cycle.js webcomponent.
 - Asciidoctor in Metalsmith
