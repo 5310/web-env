@@ -8,7 +8,9 @@
   },
   "scripts": {
     "build": "node metalsmith.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run serve & npm run watch",
+    "serve": "./node_modules/.bin/http-server --S -C .cert.localhost.pem -K .key.localhost.pem",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "./node_modules/.bin/watch 'npm run build' ./src -du --wait=5"
   },
   "author": "",
@@ -26,6 +28,7 @@
     "eslint-plugin-node": "5.x",
     "eslint-plugin-promise": "3.x",
     "eslint-plugin-standard": "3.x",
+    "http-server": "0.x",
     "jsonfile": "3.x",
     "jspm": "0.17.0-beta.42",
     "metalsmith": "2.x",
@@ -43,7 +46,7 @@
     "postcss-nested-props": "1.x",
     "stylelint": "8.x",
     "stylelint-config-standard": "17.x",
-    "sugarss": "1.x"
+    "sugarss": "1.x",
     "watch": "1.x"
   },
   "jspm": {
