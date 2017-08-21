@@ -1,11 +1,5 @@
 {
-  "name": "web-env",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "private": true,
   "scripts": {
     "build": "node metalsmith.config.js",
     "dev": "npm run serve & npm run watch",
@@ -13,14 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "./node_modules/.bin/watch 'npm run build' ./src -du --wait=5"
   },
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {},
   "devDependencies": {
     "babel-core": "6.x",
     "babel-eslint": "7.x",
     "babel-preset-env": "1.x",
     "babel-preset-stage-2": "6.x",
+    "bower": "1.x",
     "browserslist": "2.x",
     "eslint": "4.x",
     "eslint-config-standard": "10.x",

@@ -1,20 +1,6 @@
 {
   "name": "web-env",
-  "description": "",
-  "main": "index.js",
-  "authors": [
-    "Sayantan Chaudhuri <sayantan.chaudhuri@gmail.com>"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/5310/web-env",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "webcomponentsjs": "webcomponents/webcomponentsjs#1.x"
   }
