@@ -8,6 +8,9 @@ window.customElements.define(
       this.shadow = this.attachShadow({mode: 'open'})
       this.shadow.innerHTML = `
         <style>
+          :host {
+            color: blue;
+          }
         </style>
         <div class="x-test"></div>
       `

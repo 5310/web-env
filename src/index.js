@@ -1,2 +1,2 @@
 import 'components/elements/x-test.js'
-import 'app/test.js'
+import 'main/test.js'
