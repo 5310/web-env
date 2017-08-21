@@ -1,5 +1,2 @@
-class X {
-  foo = 42
-}
-const {foo} = new X()
-console.log(foo)
+import 'components/elements/x-test.js'
+import 'app/test.js'

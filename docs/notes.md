@@ -81,10 +81,13 @@
   - https://github.com/segmentio/metalsmith-collections
   - http://www.petermorlion.com/writing-your-first-metalsmith-plugin/
   - http://www.metalsmith.io/#matching
+- It was tricky to incorporate web-components into my use-case of static sites.
+  - Because those components would be Js modules that have import statements in them too, so we need to get them over JSPM or risk further deduplication.
+  - But SystemJS (and indeed, import statements) are async.
+  - They do work when loaded async'ly, but there's a flash of unpopulated content!
 
 ## TODO
 
-- Make JSPM work.
 - Prototype a Cycle.js webcomponent.
 - Asciidoctor in Metalsmith
   - See if you can add support for AsciiDoctor (addons and all) into Consolidate.js and therefore `metalsmith-layouts`

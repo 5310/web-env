@@ -1,10 +1,16 @@
 SystemJS.config({
   paths: {
-    "npm:": "jspm_packages/npm/",
-    "web-env/": "src/"
+    "web-env/": "dist/"
   },
   browserConfig: {
-    "baseURL": "/dist"
+    "paths": {
+      "npm:": "/jspm_packages/npm/"
+    }
+  },
+  nodeConfig: {
+    "paths": {
+      "npm:": "jspm_packages/npm/"
+    }
   },
   devConfig: {
     "map": {
@@ -16,7 +22,9 @@ SystemJS.config({
     "web-env": {
       "main": "index.js",
       "meta": {
-        "*.js": "plugin-babel"
+        "*.js": {
+          "loader": "plugin-babel"
+        }
       }
     }
   }
@@ -25,12 +33,9 @@ SystemJS.config({
 SystemJS.config({
   packageConfigPaths: [
     "npm:@*/*.json",
-    "npm:*.json"
+    "npm:*.json",
+    "github:*/*.json"
   ],
-  map: {
-    "preact": "npm:preact@8.2.1",
-    "process": "npm:jspm-nodelibs-process@0.2.1",
-    "skatejs": "npm:skatejs@5.0.0-alpha.16"
-  },
+  map: {},
   packages: {}
 });

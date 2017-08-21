@@ -15,6 +15,7 @@
   },
   "author": "",
   "license": "MIT",
+  "devDependencies": {},
   "devDependencies": {
     "babel-core": "6.x",
     "babel-eslint": "7.x",
@@ -50,17 +51,11 @@
     "watch": "1.x"
   },
   "jspm": {
-    "name": "web-env",
-    "main": "index.js",
-    "dependencies": {
-      "skatejs": "npm:skatejs@^5.0.0-alpha.16"
-    },
+    "dependencies": {},
     "devDependencies": {
-      "plugin-babel": "npm:systemjs-plugin-babel@0.x"
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
     },
-    "peerDependencies": {
-      "preact": "npm:preact",
-      "process": "npm:jspm-nodelibs-process@0.x"
-    }
+    "peerDependencies": {},
+    "overrides": {}
   }
 }
