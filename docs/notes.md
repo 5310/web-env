@@ -88,6 +88,7 @@
 
 ## TODO
 
+- Get SkateJS working.
 - Prototype a Cycle.js webcomponent.
 - Asciidoctor in Metalsmith
   - See if you can add support for AsciiDoctor (addons and all) into Consolidate.js and therefore `metalsmith-layouts`
