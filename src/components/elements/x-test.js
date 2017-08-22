@@ -1,29 +1,33 @@
+import 'skatejs-web-components'
+import {makeTemplate} from 'main/makeTemplate.js'
+
+const name = 'x-test'
+
 window.customElements.define(
-  'x-test',
+  name,
   class extends HTMLElement {
     constructor () {
-      // Always call super first in constructor
       super()
-      // Create the shadow root
-      this.shadow = this.attachShadow({mode: 'open'})
-      this.shadow.innerHTML = `
+    }
+    connectedCallback () {
+      this.attachShadow({mode: 'open'})
+      this.shadowRoot.innerHTML = `
         <style>
-          :host {
+          ${name} {
             color: blue;
           }
         </style>
-        <div class="x-test"></div>
+        <div class="${name}"></div>
       `
-    }
-    connectedCallback () {
       this.render()
     }
     render () {
-      const root = this.shadow.querySelector('.x-test')
+      const root = this.shadowRoot.querySelector('.'+name)
       root.innerHTML = `
           <div>TEST</div>
-      `    
+      `
     }
   }
 )
+
 console.log('Custom element <x-test> defined.')

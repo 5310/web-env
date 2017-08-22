@@ -44,15 +44,23 @@
   },
   "jspm": {
     "dependencies": {
-      "skatejs": "npm:skatejs@^5.0.0-alpha.16"
+      "skatejs": "npm:skatejs@4.x",
+      "skatejs-web-components": "npm:skatejs-web-components@0.x"
     },
     "devDependencies": {
-      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.25"
+      "plugin-babel": "npm:systemjs-plugin-babel@0.x"
     },
     "peerDependencies": {
       "preact": "npm:preact",
-      "process": "npm:jspm-nodelibs-process@^0.2.0"
+      "process": "npm:jspm-nodelibs-process@0.x"
     },
-    "overrides": {}
+    "overrides": {
+      "npm:skatejs-web-components@0.0.1": {
+        "dependencies": {
+          "shadycss": "github:webcomponents/shadycss",
+          "template": "github:webcomponents/template"
+        }
+      }
+    }
   }
 }

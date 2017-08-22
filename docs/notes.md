@@ -85,10 +85,22 @@
   - Because those components would be Js modules that have import statements in them too, so we need to get them over JSPM or risk further deduplication.
   - But SystemJS (and indeed, import statements) are async.
   - They do work when loaded async'ly, but there's a flash of unpopulated content!
+- ShadyCSS is a pain in the ass
+  - https://github.com/webcomponents/shadycss/issues/19
+- Yarn is too noisy.
+- Bower is dead.
+  - No need to worry about polyfills. Just import them wherever you need to!
+    - Except @webcomponents/webcomponentjs doesn't work, at all.
+    - Using skatejs/skatejs-web-components
+    - But the package uses GH commits as deps, which have to be overridden.
+- SkateJS 5.0.0-alpha does not work properly.
+  - Its hyperscript isn't properly variadic.
+  - It has no working props generator.
+  - And it's not documented at all, so there's that.
+  - Use 4.x instead.
 
 ## TODO
 
-- Get SkateJS working.
 - Prototype a Cycle.js webcomponent.
 - Asciidoctor in Metalsmith
   - See if you can add support for AsciiDoctor (addons and all) into Consolidate.js and therefore `metalsmith-layouts`

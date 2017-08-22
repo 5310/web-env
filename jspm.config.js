@@ -28,7 +28,20 @@ SystemJS.config({
   map: {
     "preact": "npm:preact@8.2.1",
     "process": "npm:jspm-nodelibs-process@0.2.1",
-    "skatejs": "npm:skatejs@5.0.0-alpha.16"
+    "skatejs": "npm:skatejs@4.6.7",
+    "skatejs-web-components": "npm:skatejs-web-components@0.0.1"
   },
-  packages: {}
+  packages: {
+    "npm:skatejs-web-components@0.0.1": {
+      "map": {
+        "shadycss": "github:webcomponents/shadycss@1.0.5",
+        "template": "github:webcomponents/template@1.0.0"
+      }
+    },
+    "npm:skatejs@4.6.7": {
+      "map": {
+        "incremental-dom": "npm:incremental-dom@0.4.1"
+      }
+    }
+  }
 });
