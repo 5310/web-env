@@ -6,7 +6,10 @@ customElements.define('x-hello', class XHello extends Component {
     name: prop.string({attribute: true, default: 'World'})
   }
   renderCallback() {
-    return h('div', `Hello ${this.name}!`)
+    return [
+      h('link', {rel: 'stylesheet', href: 'components/elements/x-hello.css'}),
+      h('div.x-hello', `Hello ${this.name}!`)
+    ]
   }
 })
 
