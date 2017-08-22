@@ -3,6 +3,9 @@ package-lock.json
 
 # Created by https://www.gitignore.io/api/node,purescript
 
+### Yarn ###
+yarn.lock
+
 ### Node ###
 # Logs
 logs
