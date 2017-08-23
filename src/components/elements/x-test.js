@@ -29,5 +29,3 @@ window.customElements.define(
     }
   }
 )
-
-console.log('Custom element <x-test> defined.')

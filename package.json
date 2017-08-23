@@ -44,6 +44,8 @@
   },
   "jspm": {
     "dependencies": {
+      "@cycle/dom": "npm:@cycle/dom@^18.1.0",
+      "@cycle/run": "npm:@cycle/run@^3.2.0",
       "skatejs": "npm:skatejs@4.x",
       "skatejs-web-components": "npm:skatejs-web-components@0.x"
     },
@@ -51,10 +53,34 @@
       "plugin-babel": "npm:systemjs-plugin-babel@0.x"
     },
     "peerDependencies": {
+      "assert": "npm:jspm-nodelibs-assert@^0.2.0",
+      "buffer": "npm:jspm-nodelibs-buffer@^0.2.0",
+      "constants": "npm:jspm-nodelibs-constants@^0.2.0",
+      "crypto": "npm:jspm-nodelibs-crypto@^0.2.0",
+      "events": "npm:jspm-nodelibs-events@^0.2.0",
+      "fs": "npm:jspm-nodelibs-fs@^0.2.0",
+      "os": "npm:jspm-nodelibs-os@^0.2.0",
+      "path": "npm:jspm-nodelibs-path@^0.2.0",
       "preact": "npm:preact",
-      "process": "npm:jspm-nodelibs-process@0.x"
+      "process": "npm:jspm-nodelibs-process@0.x",
+      "stream": "npm:jspm-nodelibs-stream@^0.2.0",
+      "string_decoder": "npm:jspm-nodelibs-string_decoder@^0.2.0",
+      "util": "npm:jspm-nodelibs-util@^0.2.0",
+      "vm": "npm:jspm-nodelibs-vm@^0.2.0",
+      "xstream": "npm:xstream@^10.9.0"
     },
     "overrides": {
+      "npm:inherits@2.0.3": {
+        "ignore": [
+          "test.js"
+        ]
+      },
+      "npm:pbkdf2@3.0.13": {
+        "main": "browser.js"
+      },
+      "npm:safe-buffer@5.1.1": {
+        "browser": "index.js"
+      },
       "npm:skatejs-web-components@0.0.1": {
         "dependencies": {
           "shadycss": "github:webcomponents/shadycss",

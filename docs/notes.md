@@ -98,10 +98,11 @@
   - It has no working props generator.
   - And it's not documented at all, so there's that.
   - Use 4.x instead.
+  - Or don't use at all...
+- You'll be using Cycle.js anyway. Make webcomponents out of them too.
 
 ## TODO
 
-- Prototype a Cycle.js webcomponent.
 - Asciidoctor in Metalsmith
   - See if you can add support for AsciiDoctor (addons and all) into Consolidate.js and therefore `metalsmith-layouts`
   - Just metalmisth-asciidoctor if that doesn't work.

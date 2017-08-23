@@ -1,3 +1,4 @@
 import 'components/elements/x-test.js'
-import 'components/elements/x-hello.js'
-import 'main/test.js'
+import 'components/elements/skate-test.js'
+import 'components/elements/cycle-test.js'
+import 'main/test-script.js'
