@@ -1,7 +1,0 @@
-{
-  "name": "web-env",
-  "private": true,
-  "dependencies": {
-    "webcomponentsjs": "webcomponents/webcomponentsjs#1.x"
-  }
-}
