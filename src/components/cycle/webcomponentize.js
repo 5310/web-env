@@ -1,6 +1,7 @@
 import {run} from '@cycle/run'
 import {makeDOMDriver, h} from '@cycle/dom'
 import {default as makeObservedAttrDriver} from 'components/cycle/driver-observed-attr.js'
+import {default as makeEventDispatcherDriver} from 'components/cycle/driver-event-dispatcher.js'
 
 export default (main, {attrs=[], template='', drivers={}}) =>
   class extends HTMLElement {
@@ -13,7 +14,8 @@ export default (main, {attrs=[], template='', drivers={}}) =>
       this.shadowRoot.innerHTML = template
       this.drivers = Object.assign(drivers, {
         DOM: makeDOMDriver(this.shadowRoot),
-        ATTR: makeObservedAttrDriver(this)
+        ATTR: makeObservedAttrDriver(this),
+        EV: makeEventDispatcherDriver(this)
       })
       run(this.main, this.drivers)
     }
@@ -21,6 +23,3 @@ export default (main, {attrs=[], template='', drivers={}}) =>
       this.drivers.ATTR.push(...args)
     }
   }
-
-//TODO: Merge makeObservedAttrDriver into this file.
-//TODO: Implement element properties too!
