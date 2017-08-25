@@ -100,10 +100,20 @@
   - Use 4.x instead.
   - Or don't use at all...
 - You'll be using Cycle.js anyway. Make webcomponents out of them too.
+- AsciiDoc/tor is a no go.
+  - Not only us pulling in all that Ruby a terrible idea, the library is very very...very.
+  - The HTML5 converter is anything but (non-semantic.)
+  - There's no way to create blank block elements.
+  - Or pass children to macro elements.
+    - Docs mention nested macros, but give no examples; couldn't get them to work.
+  - Docs look extensive, but are actually rather poor.
+    - http://asciidoc.org/chunked/ch21.html
+    - http://asciidoctor.org/docs/user-manual/#extensions-and-integrations
+    - Asciidoctor.js at least has some examples:
+      - https://github.com/asciidoctor/asciidoctor.js/tree/c28dfa60de30bf43f4413bd208918fc976b6bdfd/spec/share/extensions
+    - There are no docs for the API extensions actually use to generate output: 
+      - https://github.com/asciidoctor/asciidoctor/blob/master/lib/asciidoctor/converter/html5.rb
+      
 
 ## TODO
 
-- Asciidoctor in Metalsmith
-  - See if you can add support for AsciiDoctor (addons and all) into Consolidate.js and therefore `metalsmith-layouts`
-  - Just metalmisth-asciidoctor if that doesn't work.
-  - Implement a standalone AsciiDoctor plugin if nothing works out.
